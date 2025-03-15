@@ -1,0 +1,64 @@
+.mainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bahar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+}
+.bahar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+}
+.andar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+}
+.andar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+#bg-blue{
+    background-color: blue;
+}
+#bg-red{
+    background-color: red;
+}
+#bg-orange{
+    background-color: orange;
+}
+#bg-green{
+    background-color: green;
+}
+
+.div-main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+   gap: 20px;
+}

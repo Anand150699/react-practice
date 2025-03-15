@@ -1,0 +1,11 @@
+.btnNew{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+}

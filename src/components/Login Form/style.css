@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    border: 2px solid gray;
+    gap: 10px;
+}
+
+.btn{
+    height: 30px;
+    width: 300px;
+    
+}

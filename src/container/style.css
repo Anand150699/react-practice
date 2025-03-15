@@ -1,0 +1,17 @@
+.btn-lists{
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.films{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product{
+    border: 2px solid red;
+}

@@ -1,0 +1,12 @@
+.org-div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.my-div{
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+}
