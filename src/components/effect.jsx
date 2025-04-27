@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 function Effect () {
     const [state, setState] = useState(0)
+    
     useEffect(()=>{
       setState(state+1)
     },[])

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function ProductListing () {
     const [products, setProducts] = useState([])
     const navigate = useNavigate()
+
     async function fetchProducts() {
        try {
         const data = await fetch('https://dummyjson.com/products');
@@ -21,7 +22,7 @@ function ProductListing () {
 
     function handleClick (id){
         navigate(`/products/${id}`)                   //window.location.pathname = `products/${id}` provide slash before products/${id} i.e. /products/${id}
-                                                    // for getting the only path as products/id
+                                                    // for getting the only path as products/id. See this in App.js file as Dynamic routing
     }
 
     return(

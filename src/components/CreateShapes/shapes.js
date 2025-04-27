@@ -38,7 +38,7 @@ import './shapes.css'
 
 const Shapes = () =>{
     const [shape, setShape] = useState([]);
-    const [selectedShape, setSelectedShape] = useState("Square")
+    const [selectedShape, setSelectedShape] = useState("square")
     function handleChange(e){
         const val = e.target.value.toLowerCase()
         setSelectedShape(val)

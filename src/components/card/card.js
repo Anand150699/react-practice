@@ -9,7 +9,7 @@ const Card = () => {
     const [short, setShort] = useState("This is short decription");
     const [shortDes, setShortDes] = useState(true);
     const [hideCard, setHideCard] = useState(true);
-    const [images, setImages] = useState('https://st.adda247.com/https://storeimages.adda247.com/39371738142538.webp?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/887421738157071.jpg?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/867021735294981.png?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/886061738240839.jpg?tr=w-undefined')
+    const [images, setImages] = useState(['https://st.adda247.com/https://storeimages.adda247.com/39371738142538.webp?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/887421738157071.jpg?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/867021735294981.png?tr=w-undefined','https://st.adda247.com/https://storeimages.adda247.com/886061738240839.jpg?tr=w-undefined'])
     const [cnt, setCnt] = useState(0);
 
     function handleClick(){
@@ -20,6 +20,7 @@ const Card = () => {
         payload: {btnText: "clicked By you"}
        })
     }
+
     function handleDesc(){
         if(shortDes){
             setShortDes(false)
@@ -27,6 +28,7 @@ const Card = () => {
             setShortDes(true)
         }
     }
+    
     function handleHide(){
         setHideCard(false)
     }
@@ -36,6 +38,9 @@ const Card = () => {
        if(updatedCount<images.length){
         setCnt(updatedCount);
         setImages(images[updatedCount])
+       }
+       else{
+        setImages(images[0])
        }
 
     }

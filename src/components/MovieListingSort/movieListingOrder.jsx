@@ -3,13 +3,16 @@ import MovieCard from '../Movie Card/MovieCard';
 import Button from '../../button';
 import Input from '../useStateWIthObject/input';
 import InputTwoWay from '../Two way Binding/inputTwoWay';
+
 function MovieListingOrder () {
+
     const base_img_url = "https://image.tmdb.org/t/p/original" ;
     const [film, setFilms] = useState([]);
     const [sort, setSort] = useState("");
     const [search, setSearch] = useState("");
     const [hide, setHide] = useState(false)
     const [loading, setLoading] = useState(false)
+    
     async function getAllMovies () {
         setLoading(true)
         const base_url = "https://api.themoviedb.org/3/movie/top_rated?api_key=f531333d637d0c44abc85b3e74db2186&language=en-US" ;

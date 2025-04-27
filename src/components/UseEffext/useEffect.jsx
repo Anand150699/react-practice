@@ -9,11 +9,12 @@ function UseEffect () {
         })
     }
     useEffect(()=>{
-        if(counter){
+            if(counter){
             alert("Counter is incresed")
-           }
+            }
        console.log("Hi")
     },[counter])
+    
     return(
         <div>
         <h1>Counter: {counter}</h1>

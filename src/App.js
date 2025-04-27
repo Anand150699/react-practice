@@ -33,15 +33,16 @@ import Red from './components/useReducer/red';
 import RedObject from './components/useReducer/redObject';
 import PracticeSo from './practice';
 import CompA from './components/useContext & useReducer/compA';
-import UseRef from './components/useRef/useRef';
-import UseRef2 from './components/useRef/useRef2';
 import FormData from './components/FormData/formData';
 import PracticeKaro from './practice';
 import Btn from './btn';
 import ReducerPrac from './components/pract/reducerPrac';
 import { AppContext } from './components/UseReduceraAndUseContext';
 import { AppContextProvider } from './components/UseReduceraAndUseContext/AppCotextProvider';
-
+import Changed from './components/pract/practice';
+import Prac from './components/pract/practice';
+import UseRef1 from './components/useRef/useRef1';
+import UseRef2 from './components/useRef/useRef2';
 
 function App() {
   return (
@@ -95,7 +96,7 @@ function App() {
   <Route path='/card' element={<Card/>}/>
   <Route path='/time' element={<Time/>}/>
   
- </Routes> */}
+ </Routes>*/ }
    {/* <Rout/>
   <Routes>
     <Route path='/card' element={<Card/>}/>
@@ -136,6 +137,22 @@ function App() {
   {/* <Provider>
     <Shapes/>
   </Provider> */}
+  {/* <Input/> */}
+  {/* <Design/> */}
+  {/* <Card/> */}
+  {/* <Color/> */}
+  {/* <Shapes/> */}
+  {/* <Time/> */}
+  {/* <UseEffect/> */}
+  {/* <MovieListingOrder/> */}
+  {/* <Changed text={{newName:"Anand", secondName:{tokenName:"lalla"}}}
+        details={"Details are below"}
+        lastName={{lastName:"khandelwal"}}/>
+  <Changed   text={{newName: "", secondName: {tokenName: ""}}}
+  details="new details"
+  lastName={{lastName: "Something"}}/> */}
+  {/* <UseRef1/> */}
+    <UseRef2/>
     </div>
   );
 }

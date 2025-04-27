@@ -1,24 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useRef, useState, useEffect} from "react";
+import UseEffect from "../UseEffext/useEffect";
 
-function UseRef2() {
-
-   const [timer, setTimer] = useState(0) ;
-   const intervalRef = useRef(null) ;
-
-   useEffect(()=>{
-         intervalRef.current = setInterval(()=>{
-            setTimer((prev)=>{
-                return prev + 1 ;
-            })
-        }, 1000)
-
-   }, [])
+function useRef2() {
+    const[count, setCount] = useState(0)
+    const countRef = useRef(0)
+    useEffect(()=>{
+        countRef.current = countRef.current+1
+    })
   return (
     <div>
-        <h1>{timer}</h1>
-        <button onClick={()=>clearInterval(intervalRef.current)}>Pause Timer</button>
+        <h1>{count}</h1>
+        <h1>UseRef's {countRef.current}</h1>
+        <button onClick={()=>setCount(count+1)}>Add</button>
     </div>
-  )
+  );
 }
 
-export default UseRef2
+export default useRef2

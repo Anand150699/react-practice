@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 function FormData() {
-   const[sendData, setSendData] = useState({sending:false, sent: false})
+
+     const[sendData, setSendData] = useState({sending:false, sent: false})
      const [eleIndex, setEleIndex] = useState(null)
      const [dataList, setDataList] = useState([])
      const [data, setData] = useState({
@@ -16,7 +17,7 @@ function FormData() {
          dataList[eleIndex] = data ;
          setDataList(dataList)
        }else{
-         setDataList([...dataList, data])
+         setDataList([...dataList,data])
        }
        
        setData({

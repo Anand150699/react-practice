@@ -10,7 +10,7 @@
 .box{
     height: 200px;
     width: 200px;
-    border: 2px solid grey;
+    border: 2px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
