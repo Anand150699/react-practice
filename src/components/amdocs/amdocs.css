@@ -1,0 +1,37 @@
+/* Ensure html, body, and root take full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the main wrapper using Flexbox */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the form */
+.formStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.submitBtn{
+    background-color:black;
+    width: 200px;
+    height: 35px;
+}

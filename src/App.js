@@ -43,7 +43,8 @@ import Changed from './components/pract/practice';
 import Prac from './components/pract/practice';
 import UseRef1 from './components/useRef/useRef1';
 import UseRef2 from './components/useRef/useRef2';
-
+import UseFetch from './components/custom Hook/useFetch';
+import Amdocs from './components/amdocs/Amdocs';
 function App() {
   return (
     <div className="App">
@@ -152,7 +153,8 @@ function App() {
   details="new details"
   lastName={{lastName: "Something"}}/> */}
   {/* <UseRef1/> */}
-    <UseRef2/>
+    {/* <UseFetch/> */}
+    <Card/>
     </div>
   );
 }
